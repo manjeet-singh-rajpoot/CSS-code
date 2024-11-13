@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+
+    <style>
+        body{
+            height: 4430px;
+        
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      li {
+      /*   list-style: square;  */
+         list-style-type: circle;
+      }
+      header {
+        background-color: black;
+        color: white;
+        height: 70px;
+        position: sticky;
+        z-index: 1px;
+      }
+      .container {
+        background-color: aqua;
+        height: 80vh;
+        width: 50vw;
+        margin: auto;
+        border: 2px solid black;
+        /* text-align: center;  */
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        color: white;
+       /* position: relative; */
+     /*  position: absolute;   */
+        top: 0px;
+        left:0px;
+        right: 205px;
+        bottom: 100px;
+        margin: auto;
+      }
+      p {
+        text-align: center;
+        border: 2px solid palegreen;
+        padding: 3px;
+        margin: 30px;
+        width: 600px;
+      }
+      .box2 {
+        background-color: brown;
+        color: white;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        left: 150px;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>contact</li>
+          <li>Phone no.</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+        recusandae fuga enim nisi perferendis rerum temporibus, eaque sapiente
+        voluptatum, officia repellendus quae molestias labore nihil rem quia
+        possimus dolorum praesentium, cum dignissimos dicta veniam!
+      </p>
+      <div class="box">I am A Box</div>
+      <div class="box2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos natus
+        atque in, vitae sapiente molestias inventore quam provident quaerat odio
+        dicta maxime aliquam aspernatur sunt iure sequi delectus excepturi nam
+        accusamus eligendi! Repudiandae, veritatis.
+      </div>
+      <ul>
+        <li>Apple</li>
+        <li>banana</li>
+        <li>mango</li>
+      </ul>
+    </div>
+  </body>
+</html>

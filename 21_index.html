@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+        <style>
+              .container{
+                background-color: red;
+                height: 234px;
+              }
+              .box{
+                color: white;
+              /*  transform: translate(23px); */
+                transform: translate(23px,45px);
+             /*   transform: rotate(0.2turn);  */
+                border: 2px solid black;
+                transform-origin: 0px;
+             /*   transform: scaleX(2);  */
+             /*   transform: scaleY(1);   */
+            /*  transform: skew(0deg,12deg);  */
+              }
+            .image{
+                position: relative;
+                top:  194px;
+              /*  transform: rotateX(45deg);  */
+            /*  transform: rotateY(45deg); */
+            /*  transform: rotateZ(60deg);  */
+           
+            }
+            img:hover{
+                width: 56px;
+            }
+           img{
+            height: 223px;
+            /*
+               transition-property:width;
+               transition-duration: 1s;
+               transition-timing-function: ease-in;
+               transition-delay: 1s;
+               */
+            /*  transition: width 1s ease-in 1s; */
+             transition: width  1s ease-in-out , height 4s ease-in;
+           }
+
+        </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+        repellendus magnam praesentium totam, delectus, deserunt corporis
+        tenetur hic iste consectetur voluptatum vel velit, ea vitae cupiditate
+        impedit? Est, qui. Dignissimos totam impedit ad cupiditate!
+      </div>
+      <div class="image">
+        <img id="myimage" src="/google.ifif.jpg" alt="image">
+        <button id="btn">Toggle</button>
+      </div>
+    </div>
+  </body>
+          <script>
+        
+                btn.addEventListener('click', ()=>{
+                    myimage.style.width="156px";
+                    myimage.style.height="56px";
+                    if( myimage.style.width ==="16px"){
+                        myimage.style.width="156px";
+                        myimage.style.height="56px";
+                    }else{
+                        myimage.style.width="56px";
+                    }
+                   
+                });
+          </script>
+</html>
